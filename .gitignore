@@ -1,0 +1,15 @@
+# Ignorar diretórios de dados MySQL
+mysql*_data/
+
+# Ignorar arquivos de ambiente
+.env
+
+# Ignorar logs
+*.log
+
+# Ignorar arquivos temporários
+*.tmp
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
