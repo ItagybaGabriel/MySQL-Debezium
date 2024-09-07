@@ -2,7 +2,7 @@
 mysql*_data/
 
 # Ignorar arquivos de ambiente
-.env
+# .env
 
 # Ignorar logs
 *.log
