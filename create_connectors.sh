@@ -1,4 +1,5 @@
-for i in {1..8}
+#!/bin/bash
+for i in {1..3}
 do
   cat << EOF > mysql${i}-connector.json
 {
@@ -18,7 +19,8 @@ do
     "topic.prefix": "mysql${i}",
     "schema.history.internal": "io.debezium.storage.kafka.history.KafkaSchemaHistory",
     "schema.history.internal.kafka.bootstrap.servers": "kafka:9092",
-    "schema.history.internal.kafka.topic": "schema-changes.mysql${i}"
+    "schema.history.internal.kafka.topic": "schema-changes.mysql${i}",
+    "snapshot.mode": "initial"
   }
 }
 EOF
